@@ -11,10 +11,14 @@ try{
 	// select a collection (analogous to a relational database's table)
 	$collection = $db->aluno;
 
-
 	// add a record
-	$document = array( "nome" => "Maria", "email" => "maria@gmail.com" );
-	$collection->insert($document);
+	//$discplinas = array("Biologia", "Física");
+	//$document = array( "nome" => "André", "email" => "andre@gmail.com", "disciplinas" => $discplinas);
+	//$collection->insert($document);
+
+	// del a recor
+	//$document = array("nome" => "andre");
+	//$collection->remove($document);
 
 	// find everything in the collection
 	$cursor = $collection->find();
